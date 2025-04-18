@@ -1,3 +1,4 @@
+#1° to run
 #connect to network
 echo 'connect to network'
 iwctl
