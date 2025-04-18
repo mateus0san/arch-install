@@ -12,7 +12,7 @@ mkfs.ext4 /dev/sda3 && mkswap /dev/sda2 && mkfs.fat -F 32 /dev/sda1 && echo "Ok(
 
 #mount disks
 echo 'mount' && sleep 2
-mount /dev/sda3 /mnt && mout --mkdir /dev/sda1 /mnt/boot && swapon /dev/sda2 && echo "Ok(mount)" || exit
+mount /dev/sda3 /mnt && mount --mkdir /dev/sda1 /mnt/boot && swapon /dev/sda2 && echo "Ok(mount)" || exit
 
 #Installing packages
 echo 'installing packages' && sleep 2
