@@ -18,4 +18,5 @@ mount /dev/sda3 /mnt && mount --mkdir /dev/sda1 /mnt/boot && swapon /dev/sda2 &&
 echo 'installing packages' && sleep 2
 pacstrap -K /mnt base linux linux-firmware vim intel-ucode sof-firmware networkmanager man-db man-pages texinfo git && echo 'Ok(installing packages)' || exit
 
+cp charch_arch.sh /mnt/
 genfstab -U /mnt >> /mnt/etc/fstab && arch-chroot /mnt && echo 'everything is okay...' || exit
