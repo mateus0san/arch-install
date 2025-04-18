@@ -1,5 +1,5 @@
 echo "it's time..."
-ln -sf /usr/share/zoneinfo/America/Bahia /etc/localtime && hwclock --systohc && echo en_US.UTF-8 UTF-8 >> /etc/locale.gen && locale-gen && echo LANG=en_US.UTF-8 >> locale.conf && echo KEYMAP=br-abnt2 >> /etc/vconsole.conf || exit
+ln -sf /usr/share/zoneinfo/America/Bahia /etc/localtime && hwclock --systohc && echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen && locale-gen && echo LANG=en_US.UTF-8 >> locale.conf && echo KEYMAP=br-abnt2 >> /etc/vconsole.conf || exit
 
 echo 'networking...'
 echo book550 >> /etc/hostname && systemctl enable NetworkManager && vim /etc/hosts && echo 'doing well...' || exit
