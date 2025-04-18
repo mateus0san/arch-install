@@ -4,7 +4,7 @@ pacman -S sudo fish && useradd -m -G wheel -s /bin/fish mateus && passwd mateus 
 echo 'video, reflector and contrib'
 pacman -S pacman-contrib reflector mesa vulkan-intel intel-media-driver || exit
 echo 'sway'
-pacman -S sway swayidle swaylock swaybg fuzzel alacritty zellij helix xdg-user-dirs thermald || exit
+pacman -S sway swayidle swaylock swaybg fuzzel alacritty zellij helix xdg-user-dirs thermald gammastep brightnessctl || exit
 echo 'sound'
 pacman -S pipewire wireplumber pipewire-alsa pipewire-pulse pipewire-jack || exit
 echo 'firewall'
