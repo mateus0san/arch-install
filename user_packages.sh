@@ -1,3 +1,4 @@
+#3° to run
 echo 'user'
 pacman -S sudo fish && useradd -m -G wheel -s /bin/fish mateus && passwd mateus || exit
 echo 'video, reflector and contrib'
