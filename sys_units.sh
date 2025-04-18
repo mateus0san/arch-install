@@ -1,3 +1,4 @@
+# 4° to run
 echo 'reflector'
 systemctl enable reflector.timer && vim /etc/xdg/reflector/reflector.conf || exit
 echo 'thermald'
