@@ -18,7 +18,7 @@ mount /dev/sda3 /mnt && mout --mkdir /dev/sda1 /mnt/boot && swapon /dev/sda2 && 
 echo 'installing packages' && sleep 2
 pacstrap -K /mnt base linux linux-firmware vim intel-ucode sof-firmware networkmanager man-db man-pages texinfo && echo 'Ok(installing packages)' && sleep 2
 
-genfstab -U /mnt >> /mnt/etc/fstab && arch-chroot /mnt && ln -sf /usr/share/zoneinfo/America/Bahia /etc/localtime && hwclock --systohc && echo en_US.UTF-8 UTF-8 >> /etc/locale.gen && locale-gen && echo LANG=en_US.UTF-8 >> locale.conf && echo KEYMAP=br-abnt2 && echo 'everything is okay...' && echo sleep 2
+genfstab -U /mnt >> /mnt/etc/fstab && arch-chroot /mnt && echo 'everything is okay...' && echo sleep 2
 
 echo book550 >> /etc/hostname && systemctl enable NetworkManager && vim /etc/hosts && echo 'doing well...' && sleep 2
 
